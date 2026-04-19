@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestAI App</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header>
+        <h2 id="page-title">Cargando...</h2>
+    </header>
+
+    <main id="app-content">
+        </main>
+
+    <nav class="bottom-nav">
+        <button onclick="renderPage('stats', this)" class="nav-item active" id="default-btn">
+            <span>📊</span>Mercado
+        </button>
+        <button onclick="renderPage('prob', this)" class="nav-item">
+            <span>📈</span>Probabilidad
+        </button>
+        <button onclick="renderPage('personal', this)" class="nav-item">
+            <span>⭐</span>Mi Guía
+        </button>
+    </nav>
+
+    <script src="./script.js"></script>
+</body>
+</html>
