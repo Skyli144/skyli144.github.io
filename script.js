@@ -34,18 +34,18 @@ function renderPage(pageId, btn) {
     } 
     
     else if (pageId === 'personal') {
-    title.innerText = "Mi Guía Personal";
-    content.innerHTML = `
-        <div class="personal-card">
-            <h3>💎 Selección Automática de Valor</h3>
-            <p>Estas empresas cambian según el mercado. Solo verás las que tienen mejores fundamentales (infravaloradas) y balances sólidos hoy.</p>
-        </div>
-        <div class="widget-wrapper" style="height: 500px;">
-            <iframe src="https://s.tradingview.com/embed-widget/screener/?locale=es#%7B%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22defaultColumn%22%3A%22overview%22%2C%22defaultScreen%22%3A%22undervalued%22%2C%22market%22%3A%22america%22%2C%22showToolbar%22%3Afalse%2C%22colorTheme%22%3A%22dark%22%7D" 
-                    width="100%" height="100%" frameborder="0"></iframe>
-        </div>
-    `;
-}
+        title.innerText = "Mi Guía Personal";
+        content.innerHTML = `
+            <div class="personal-card">
+                <h3>💎 Top Acciones Recomendadas</h3>
+                <p>Análisis en tiempo real de los activos con mayor proyección y solidez en el mercado actual.</p>
+            </div>
+            <div class="widget-wrapper" style="height: 500px;">
+                <iframe src="https://s.tradingview.com/embed-widget/market-overview/?colorTheme=dark&showChart=true&locale=es&tabs=%5B%7B%22title%22%3A%22Acciones%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22NASDAQ%3AAPL%22%7D%2C%7B%22s%22%3A%22NASDAQ%3ANVDA%22%7D%2C%7B%22s%22%3A%22NASDAQ%3AMSFT%22%7D%2C%7B%22s%22%3A%22NASDAQ%3AAMZN%22%7D%2C%7B%22s%22%3A%22NASDAQ%3AGOOGL%22%7D%2C%7B%22s%22%3A%22NASDAQ%3AMETA%22%7D%5D%7D%5D" 
+                        width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+        `;
+    }
 }
 
 // Función auxiliar para mantener los widgets limpios
