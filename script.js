@@ -14,24 +14,28 @@ function renderPage(pageId, btn) {
     } 
     
     else if (pageId === 'prob') {
-        title.innerText = "Alta Probabilidad";
-        // SELECCIÓN DE ACTIVOS CON PROYECCIÓN A CORTO Y LARGO PLAZO
+        title.innerText = "Radar de Probabilidades";
         content.innerHTML = `
-            <p style="color: var(--accent); font-weight: bold; margin-bottom:15px;">🚀 Proyecciones Estratégicas</p>
+            <div class="personal-card">
+                <h3>🔍 Escáner Técnico en Tiempo Real</h3>
+                <p>Este radar analiza automáticamente las empresas de EE.UU. y te dice cuáles tienen mayor probabilidad de subida (Compra) o bajada (Venta) ahora mismo.</p>
+            </div>
             
-            <div class="personal-card">
-                <h3>📈 Corto Plazo: NVIDIA (NVDA)</h3>
-                <p>La demanda de chips de IA sigue superando la oferta. Indicadores técnicos sugieren continuación de tendencia.</p>
+            <div class="widget-wrapper" style="height: 600px;">
+                <iframe src="https://s.tradingview.com/embed-widget/screener/?locale=es#%7B%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22defaultColumn%22%3A%22technical_rating%22%2C%22defaultScreen%22%3A%22top_gainers%22%2C%22market%22%3A%22america%22%2C%22showToolbar%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%7D" 
+                        width="100%" height="100%" frameborder="0"></iframe>
             </div>
-            ${getWidgetHTML('NVDA', 'technical')}
-
-            <div class="personal-card">
-                <h3>⏳ Largo Plazo: TESLA (TSLA)</h3>
-                <p>Tras la corrección, los niveles actuales presentan una alta probabilidad de acumulación para el próximo ciclo de conducción autónoma.</p>
+    
+            <div class="personal-card" style="margin-top: 20px;">
+                <h4>💡 Cómo leer este radar:</h4>
+                <ul style="font-size: 0.85rem; color: #ccc; padding-left: 15px;">
+                    <li><b>Fuerte Compra:</b> Alta probabilidad de que la tendencia siga subiendo.</li>
+                    <li><b>Fuerte Venta:</b> Alta probabilidad de que el precio siga cayendo.</li>
+                    <li><b>Neutral:</b> El mercado está esperando noticias, mejor no entrar aún.</li>
+                </ul>
             </div>
-            ${getWidgetHTML('TSLA', 'technical')}
         `;
-    } 
+    }
     
     else if (pageId === 'personal') {
         title.innerText = "Mi Guía Personal";
