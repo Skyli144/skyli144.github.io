@@ -18,14 +18,14 @@ function renderPage(pageId, btn) {
         content.innerHTML = `
             <div class="personal-card">
                 <h3>🎯 Indicadores de Alta Precisión</h3>
-                <p>Análisis técnico en tiempo real. Si los medidores están en <b>Compra Fuerte</b>, la probabilidad de subida es máxima.</p>
+                <p>Análisis técnico en tiempo real. La probabilidad es mayor cuando el medidor está en <b>Compra Fuerte</b>.</p>
             </div>
     
             <div class="personal-card">
                 <h4 style="margin-bottom: 15px; display: flex; align-items: center;">
                     <img src="https://s3-symbol-logo.tradingview.com/nvidia--big.svg" width="25" style="margin-right:10px;"> NVIDIA (NVDA)
                 </h4>
-                <div class="widget-wrapper" style="height: 350px;">
+                <div class="widget-wrapper" style="height: 380px;">
                     <iframe src="https://s.tradingview.com/embed-widget/technical-analysis/?colorTheme=dark&symbol=NASDAQ%3ANVDA&interval=1h&locale=es" 
                             width="100%" height="100%" frameborder="0"></iframe>
                 </div>
@@ -35,25 +35,20 @@ function renderPage(pageId, btn) {
                 <h4 style="margin-bottom: 15px; display: flex; align-items: center;">
                     <img src="https://s3-symbol-logo.tradingview.com/apple--big.svg" width="25" style="margin-right:10px;"> Apple (AAPL)
                 </h4>
-                <div class="widget-wrapper" style="height: 350px;">
-                    <iframe src="https://s.tradingview.com/embed-widget/technical-analysis/?colorTheme=dark&symbol=NASDAQ%3AAPL&interval=1h&locale=es" 
+                <div class="widget-wrapper" style="height: 380px;">
+                    <iframe src="https://s.tradingview.com/embed-widget/technical-analysis/?colorTheme=dark&symbol=NASDAQ%3AAAPL&interval=1h&locale=es" 
                             width="100%" height="100%" frameborder="0"></iframe>
+                </div>
             </div>
     
             <div class="personal-card">
                 <h4 style="margin-bottom: 15px; display: flex; align-items: center;">
                     <img src="https://s3-symbol-logo.tradingview.com/tesla--big.svg" width="25" style="margin-right:10px;"> Tesla (TSLA)
                 </h4>
-                <div class="widget-wrapper" style="height: 350px;">
+                <div class="widget-wrapper" style="height: 380px;">
                     <iframe src="https://s.tradingview.com/embed-widget/technical-analysis/?colorTheme=dark&symbol=NASDAQ%3ATSLA&interval=1h&locale=es" 
                             width="100%" height="100%" frameborder="0"></iframe>
                 </div>
-            </div>
-    
-            <div class="personal-card" style="margin-top: 20px; background: #1e222d;">
-                <p style="font-size: 0.8rem; color: #888;">
-                    ⚠️ <b>Consejo:</b> Si quieres ver "en cuánto subirá", pulsa dentro de cada medidor los botones de 1m, 5m o 1h. Los datos se actualizarán al instante.
-                </p>
             </div>
         `;
     }
